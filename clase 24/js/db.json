@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Empanada de Carne",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 2,
+      "name": "Chinchulines",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 3,
+      "name": "Milanesas",
+      "price": 300,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 4,
+      "name": "Locro",
+      "price": 500,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 5,
+      "name": "Pizza",
+      "price": 500,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 6,
+      "name": "Fainá",
+      "price": 400,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 7,
+      "name": "Polenta",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 8,
+      "name": "Ñoquis",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 9,
+      "name": "Ravioles",
+      "price": 300,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 10,
+      "name": "Empanada de pollo",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    },
+    {
+      "id": 11,
+      "name": "Empanada de Jamon y Queso",
+      "price": 200,
+      "moneda": "$",
+      "stock": 5
+    }
+  ]
+}

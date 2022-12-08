@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="contenedor">
+    <h1>Clase 4 - HTML5 - Etiquetas Semanticas</h1>
+
+    <!-- header en html 4 usando div-->
+    <!--
+    <div class="header">
+        <h2>titulo de la pagina</h2>
+        <div class="nav">
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+            <a href="#">link 1</a>
+        </div>
+    </div>
+	-->
+	
+    <!-- header -->
+    <header>
+    	<h2>Titulo de la pagina</h2>
+        <nav>
+        	<a href="#tabla-1"><i class="fas fa-table"></i>Ir a tabla 1</a>
+        	<a href="#tabla-2"><i class="fas fa-table"></i>Ir a tabla 2</a>
+        	<a href="#lista-1"><i class="fas fa-list-ol"></i>Ir a lista 1</a>
+        	<a href="#lista-2"><i class="fas fa-list-ul"></i>Ir a lista 2</a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+    	<h2>Cuerpo de la pagina</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et <span class="negrita">dolore magna aliqua.</span> Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. <span class="negrita">Excepteur sint occaecat</span> cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <section>
+        	<h3>tabla 1</h3>
+	        <table id="tabla-1">
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	        </table>
+        </section>
+        <section>
+        	<h3>tabla 2</h3>
+	        <table id="tabla-2">
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	            <tr>
+	                <td>item 1</td>
+	                <td>item 2</td>
+	                <td>item 3</td>
+	            </tr>
+	        </table>
+	        <img  class="img-cuadro" src="logo.png" alt="Logo HTML5">
+	        <article>
+	        	<h4>informacion de la tabla</h4>
+	        	<p>
+	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	        	</p>
+	        </article>
+	        <details>
+	            <summary>Some details</summary>
+	            <div id="contenido-extra">
+	                <p>More info about the details.</p>
+	                <p>More info about the details.</p>
+	                <p>More info about the details.</p>
+	            </div>
+	        </details>
+        </section>
+        <section>
+        	<h3>elemento figure</h3>
+        	<figure>
+	            <img  class="img-cuadro" src="logo.png" alt="Logo HTML5">
+	            <figcaption>Logo HTML5</figcaption>
+	        </figure>
+	        <a href="https://www.w3schools.com/TAGs/tryit.asp?filename=tryhtml_figcaption_css">Ejemplo figure</a>
+        </section>
+        <section>
+        	<h3>listas ordenadas anidadas</h3>
+        	<ol id="lista-1">
+        		<li>item 1</li>
+        		<li>item 2</li>
+        		<li>item 3</li>
+        		<li>item 4
+        			<ol>
+        				<li>item 1</li>
+        				<li>item 1</li>
+        				<li>item 1</li>
+        				<li>item 1</li>
+        			</ol>
+        		</li>
+        	</ol>
+        </section>
+        <section>
+        	<h3>listas desordenadas anidadas</h3>
+        	<ul id="lista-2">
+        		<li>item 1</li>
+        		<li>item 2</li>
+        		<li>item 3</li>
+        		<li>item 4
+        			<ul>
+        				<li>item 1</li>
+        				<li>item 2</li>
+		        		<li>item 3</li>
+		        		<li>item 3</li>
+        			</ul>
+        		</li>
+        	</ul>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <nav>
+           	<a href="#tabla-1"><i class="fas fa-table"></i>Ir a tabla 1</a>
+        	<a href="#tabla-2"><i class="fas fa-table"></i>Ir a tabla 2</a>
+        	<a href="#lista-1"><i class="fas fa-list-ol"></i>Ir a lista 1</a>
+        	<a href="#lista-2"><i class="fas fa-list-ul"></i>Ir a lista 2</a>
+        </nav>
+        <address>
+            You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+            If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+            You may also want to visit us:<br>
+            Mozilla Foundation<br>
+            1981 Landings Drive<br>
+            Building K<br>
+            Mountain View, CA 94043-0801<br>
+            USA
+        </address>
+    </footer>
+    </div>
+</body>
+
+</html>

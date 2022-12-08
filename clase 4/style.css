@@ -1,0 +1,110 @@
+/*ESTRUCTURA PARA DAR ESTILOS CON CSS3*/
+/*
+selector {
+	propiedad : valor;
+	propiedad : valor;
+}
+*/
+/** selector universal de css, sirve para seleccionar a todos los elementos de html*/
+*
+{
+	/*la propiedad font-family define un tipo de fuente para el texto*/
+	font-family: 'Dancing Script', cursive;
+	/*la propiedad font-size define un tamaño de fuente para el texto*/
+	font-size: 40px;
+}
+
+/*selector de elemento, podemos ingresar cualquier elemento de html, este caso usamos p*/
+/*seleccionamos todos los p de nuestro documento html*/
+p{
+	/*la propiedad color define un color para el texto*/
+	/*se puede usar cualquier codificacion de color*/
+	/*en este caso simplemente escribimos el color en ingles*/
+	color: red;
+	color: blue;
+}
+
+/*selector de id usamos el caracter # para decirle a css que vamos a ingresar el id de un elemento html*/
+#texto{
+	color: green;
+}
+/*selector de clase usamos el caracter . para decirle a css que vamos a ingresar la clase de un/unos elemento/s de html*/
+.letra-color-rojo
+{
+	color: yellow;
+}
+
+p
+{ 
+	color: hsl(154, 83%, 41%);
+	font-size: 70px;
+	/*la propiedad background define un color de fondo para un elemento html*/
+	background: black;
+	/*la propiedad width define un ancho para un elemento html*/
+	width: 250px;
+	/*la propiedad height define un alto para un elemento html*/
+	height: 250px;
+}
+
+#segundo-titulo
+{
+	font-size: 50px;
+	color: red;
+}
+
+.color-rojo
+{
+	color: red;
+}
+
+*
+{
+	font-size: 55px;
+	color: blue;
+}
+
+/*podemos usar la coma para hacer referencia a varios selectores de css*/
+h2, 
+.color-rojo,
+#segundo-titulo
+{
+	color: red;
+	font-size: 55px;
+}
+
+/*selector que agrega un estilo css solo a los h2 que tengan la clase letra-color-rojo*/
+h2.letra-color-rojo
+{
+	color: red;
+}
+
+#demo ~ .letra-color-rojo
+{
+	width: 250px;
+	height: 250px;
+	background: green;
+}
+
+/*este selector agregar estilos de css a los elementos img que sean decendientes de a, los img pueden ser hijos de a o nietos a y asi*/
+a img
+{
+	/*propiedades css*/
+}
+
+/*este selector agregar estilos de css a los elementos img que sean hijos de a, y solo a los img que sean hijo, si hay un img que es nieto de a no se le agregaran los estilos*/
+a > img
+{
+	/*propiedades css*/
+}
+
+/*este selector agregar estilos de css a los elementos img que sean hermanos de a, pero solo a los que sean hermanos directos, es decir todos los img(selecciona un img por cada a) que estan justo despues de un a*/
+a + img
+{
+	/*propiedades css*/
+}
+
+/*este selector agregar estilos de css a los elementos img que sean hermanos de a y que esten despues de a, solo a los hermanos*/
+a ~ img
+{
+	/*propiedades css*/
+}

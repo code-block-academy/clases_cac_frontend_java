@@ -1,0 +1,30 @@
+.pantalla {
+  min-height: 100vh;
+}
+
+.caja-contenedora {
+  height: 50vh;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.centrar-texto {
+  /* colores */
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_contenedor {
+  width: 40vw;
+  height: 80vh;
+  background-color: aqua;
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-home">
+      <header class="bg-dark text-white p-2">
+        <h1 class="text-center">JavaScript Clase 17 - Manejo del DOM</h1>
+      </header>
+      <nav id="navScrollspy" class="border p-3">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionFormulario">Formulario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionCards">Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionSignIn">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sectionRandomNumber">Random Number</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">section 3</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div
+          class="scroller"
+          data-spy="scroll"
+          data-target="#navScrollspy"
+          data-offset="80"
+        >
+          <!-- formulario -->
+          <div id="sectionFormulario" class="container">
+            <button class="btn btn-info" id="btn-1">boton</button>
+
+            <h2 id="textoH2"><span>Formulario</span></h2>
+            <form action="">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="username">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Username"
+                    required
+                  />
+                  <div class="invalid-feedback" style="width: 100%">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email"
+                  >Email <span class="text-muted">(Optional)</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="you@example.com"
+                  maxlength="20"
+                  minlength="10"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="1234 Main St"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="address2"
+                  >Address 2 <span class="text-muted">(Optional)</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address2"
+                  placeholder="Apartment or suite"
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="country">Country</label>
+                  <select
+                    class="custom-select d-block w-100"
+                    id="country"
+                    required
+                  >
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">State</label>
+                  <select
+                    class="custom-select d-block w-100"
+                    id="state"
+                    required
+                  >
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="zip">Zip</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="zip"
+                    placeholder=""
+                    max="20"
+                    maxlength="3"
+                    required
+                  />
+                  <div class="invalid-feedback">Zip code required.</div>
+                </div>
+              </div>
+              <hr class="mb-4" />
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="same-address"
+                />
+                <label class="custom-control-label" for="same-address"
+                  >Shipping address is the same as my billing address</label
+                >
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="save-info"
+                />
+                <label class="custom-control-label" for="save-info"
+                  >Save this information for next time</label
+                >
+              </div>
+              <hr class="mb-4" />
+              <div class="row justify-content-between">
+                <div class="col-4">
+                  <input
+                    type="reset"
+                    class="btn btn-danger btn-block"
+                    value="Reset"
+                  />
+                </div>
+                <div class="col-4">
+                  <input type="submit" class="btn btn-success btn-block" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- CARDS -->
+          <div id="sectionCards" class="bg-secondary">
+            <h2 class="text-white">Cards</h2>
+            <div
+              class="row row-cols-3 my-3 text-center w-100 justify-content-between p-3 m-auto"
+            >
+              <div class="col">
+                <!-- card 1 -->
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      $0 <small class="text-muted">/ mo</small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>10 users included</li>
+                      <li>2 GB of storage</li>
+                      <li>Email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-block btn-outline-primary"
+                    >
+                      Sign up for free
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <!-- card 2 -->
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      $15 <small class="text-muted">/ mo</small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Priority email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-block btn-primary"
+                    >
+                      Get started
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <!-- card 3 -->
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      $15 <small class="text-muted">/ mo</small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Priority email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-block btn-primary"
+                    >
+                      Get started
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <!-- card 4 -->
+                <div class="card mb-4 shadow-sm">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                      $29 <small class="text-muted">/ mo</small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>30 users included</li>
+                      <li>15 GB of storage</li>
+                      <li>Phone and email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-block btn-primary"
+                    >
+                      Contact us
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sign In -->
+          <div id="sectionSignIn" class="bg-primary">
+            <h2 class="text-white">Sign In</h2>
+            <form class="form-signin">
+              <!-- <img
+                class="mb-4 rounded w-100"
+                src="https://lorempixel.com/300/300/cats"
+              /> -->
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="inputEmail"
+                class="form-control"
+                placeholder="Email address"
+                required
+              />
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input
+                type="password"
+                id="inputPassword"
+                class="form-control"
+                placeholder="Password"
+                required
+              />
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" />
+                  Remember me
+                </label>
+              </div>
+              <button class="btn btn-lg btn-success btn-block" type="submit">
+                Sign in
+              </button>
+            </form>
+          </div>
+          <!-- Random Number -->
+          <div id="sectionRandomNumber" class="bg-info">
+            <h2>Random Number</h2>
+            <p class="text-white f-2">
+              se ha creado un numero aleatorio entre 1 y 100 adivina cual es
+            </p>
+            <div
+              class="container d-flex justify-content-around h-75 flex-column"
+            >
+              <input
+                type="number"
+                class="form-control p-3"
+                placeholder="Ingresa un numero"
+                id="user_game"
+              />
+              <div id="text-game-lose" class="alert alert-danger d-none">
+                Try Again!
+              </div>
+              <button id="btn_game" class="btn btn-primary btn-block">
+                GO!
+              </button>
+              <div id="text-game-win" class="alert alert-success d-none">
+                YOU WIN!
+              </div>
+            </div>
+          </div>
+          <!-- API Clima -->
+          <div id="section3" class="bg-success">
+            <h2>Clima</h2>
+            <div class="grid-clima">
+              <div class="input">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Location"
+                    id="input-api-clima"
+                  />
+                  <div class="input-group-append">
+                    <button id="btn-api" class="btn btn-info">Search</button>
+                  </div>
+                </div>
+                <div class="alert alert-danger m-0 p-2 w-100 text-center">
+                  Error!
+                </div>
+              </div>
+              <div id="head-clima" class="clima"></div>
+              <div class="info">
+                <ul id="info-clima"></ul>
+              </div>
+              <div id="location-clima" class="location">Location</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-dark text-white text-center p-2">
+        <p>Copyrigth 2020 &copy;</p>
+      </footer>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

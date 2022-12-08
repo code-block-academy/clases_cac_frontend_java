@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Clase 2</title>
+	<!-- la etiqueta link define un relacion entre un archivo externo y nustro documento html -->
+	<!-- el atributo rel define la relacion -->
+	<!-- en href especificamos la ruta de nuestro archivo -->
+	<link rel="stylesheet" href="style.css">
+	<!-- rel="icon" define la relacion de un icono, en este caso estamos definiendo un icono para la pestaña de nuestra pagina -->
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+	<!-- atributo id define una manera unica de identificar a un elemento -->
+	<h1 id="inicio">Clase 2 HTML5 - Listas y Tablas</h1>
+
+	<h2>lista ordenada</h2>
+	<!-- lista ordenada -->
+	<!-- ol define una lista ordenada -->
+	<ol>
+		<!-- li define cada item de la lista -->
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+
+	<h2>lista desordenada</h2>
+	<!-- lista desordenada -->
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+
+	<h2 id="tabla">tabla basica</h2>
+	<!-- estructura basica de una tabla -->
+	<!-- table define una tabla -->
+	<table>
+		<!-- tr define una fila de la tabla -->
+		<tr>
+			<!-- td define una celda/item de la tabla -->
+			<td>item 1</td>
+			<td>item 2</td>
+			<td>item 3</td>
+		</tr>
+		<tr>
+			<td>item 1</td>
+			<td>item 2</td>
+			<td>item 3</td>
+		</tr>
+		<tr>
+			<td>item 1</td>
+			<td>item 2</td>
+			<td>item 3</td>
+		</tr>
+	</table>
+
+	<!-- atributos rowspan y colspan -->
+	<h2>tabla con colspan y rowspan</h2>
+	<table>
+		<tr>
+			<td>item</td>
+			<!-- el atributo colspan define la cantidad de columnas que usa un elemento -->
+			<td colspan="2">item 2</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<!-- el atributo rowspan define la cantidad de filas que ocupa un elemento -->
+			<td rowspan="2">item</td>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+		<tr>
+			<td>item</td>
+			<td>item</td>
+			<td>item</td>
+		</tr>
+	</table>
+
+
+	<h2>tabla completa</h2>
+	<!-- estructura completa de una tabla -->
+	<table>
+		<!-- thead define de manera semantica la cabecera de la tabla -->
+		<thead>
+			<tr>
+				<!-- th define de manera semantica las celdas de entradas de datos de la tabla -->
+				<th>item</th>
+				<th>item</th>
+				<th>item</th>
+			</tr>
+		</thead>
+		<!-- tbody define de manera semantica el cuerpo de la tabla -->
+		<tbody>
+			<tr>
+				<td>item</td>
+				<td>item</td>
+				<td>item</td>
+			</tr>
+			<tr>
+				<td>item</td>
+				<td>item</td>
+				<td>item</td>
+			</tr>
+		</tbody>
+		<!-- tfoot define de manera semantica el pie de la tabla -->
+		<tfoot>
+			<tr>
+				<td>item</td>
+				<td>item</td>
+				<td>item</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<hr>
+	<h2>iframes</h2>
+	<!-- iframe	 -->
+	<!-- iframe incruta una pagina web externa en nuestra pagina web -->
+	<!-- en este caso agregamos un mapa de google maps -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52574.79338742029!2d-58.485805538148774!3d-34.55546475068416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1598445448940!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+	<!-- en este caso agregamos un video de youtube -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/q5jix5Wuzg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!-- en este caso agregamos una pagina web -->
+	<iframe src="https://marcoavilaweb.web.app/"></iframe>
+
+	<!-- tambien existen la etiquetas -->
+	<!-- <audio></audio> -->
+	<!-- <video></video> -->
+	<!-- por un tema de espacio en el hosting de nuestro sitio es mejor usar iframes para agregar un video, pero pueden investigar mas sobre el uso de estas etiquetas -->
+
+	<hr>
+	<h2>mas usos de la etiqueta a</h2>
+	<!-- en el atributo href podemos agregar el caracter # que hace referencia a un id de un elemento, seguido de # escribimos el id del elementos al cual queremos ir, con eso estamos haciendo un vinculo entre el enlace y el elemento que tenga el id inicio en este caso -->
+	<a href="#inicio">Ir al inicio</a>
+	<a href="#talba">Ir a tabla basica</a>
+
+	<!-- si agregamos en el href mailto:mail vamos a dar la instruccion de que cuando alguien haga click en el enlace se va intentar enviar un correo al mail que ingresamos -->
+	<a href="mailto:avila.tapia.marco@gmail.com">consultas</a>
+
+	<!-- tambien podemos hacer que una imagen sea un enlace -->
+	<a href="https://www.google.com/" target="_blank">
+		<img src="img.gif">
+	</a>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <!-- <h1>Ejemplo clase anterior</h1>
+    	<div class="row row-cols-2">
+	    	<div class="col p-3">
+	    		<p>
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    		</p>
+	    	</div>
+	    	<div class="col p-3">
+	    		<p>
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    		</p>
+	    	</div>
+	    	<div class="col p-3">
+	    		<p>
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    		</p>
+	    	</div>
+	    </div>
+	    <hr>
+	    <div class="content-table">
+	    	<table class="table table-info">
+		    	<thead class="thead-dark">
+		    		<tr>
+		    			<th>columna 1</th>
+		    			<th>columna 2</th>
+		    			<th>columna 3</th>
+		    			<th>columna 4</th>
+		    			<th>columna 1</th>
+		    			<th>columna 2</th>
+		    		</tr>
+		    	</thead>
+		    	<tbody>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    		<tr>
+		    			<td>columna 1</td>
+		    			<td>columna 2</td>
+		    			<td>columna 3</td>
+		    			<td>columna 4</td>
+		    			<td>columna 5</td>
+		    			<td>columna 6</td>
+		    		</tr>
+		    	</tbody>
+	    	</table>
+	    </div> -->
+      <!-- navbar con bootstrap -->
+      <nav class="navbar bg-dark navbar-dark navbar-expand-md text-left">
+        <!-- logo -->
+        <div class="navbar-brand">Logo</div>
+        <!-- boton para ocultar o mostrar menu -->
+        <!-- el boton se muestra dependiendo de el breakpoint del padre -->
+        <!-- que se especifica en la clase navbar-expand-[breakpoint] -->
+        <div class="navbar-toggler" data-toggle="collapse" data-target="#demo">
+          <span class="navbar-toggler-icon"></span>
+        </div>
+
+        <!-- listas nav -->
+        <div class="collapse navbar-collapse" id="demo">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a href="#" class="nav-link">link 1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">link 2</a></li>
+            <li class="nav-item dropdown">
+              <div
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+              >
+                mostrar
+              </div>
+
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">enlace 1</a>
+                <a href="#" class="dropdown-item">enlace 2</a>
+                <a href="#" class="dropdown-item">enlace 3</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" />
+              <div class="input-group-append">
+                <div class="btn btn-outline-info">Search</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <!-- btn group -->
+      <div class="btn-group btn-block my-3">
+        <!-- collapse demo -->
+        <!-- data-toggle especifica la instruccion, en este caso es collapse -->
+        <!-- data-target indica en que elemento vamos a aplicar la instruccion -->
+        <!-- en este caso la aplicamos al elemento con el id collapse_demo -->
+        <div
+          class="btn btn-outline-success"
+          data-target="#collapse_demo"
+          data-toggle="collapse"
+        >
+          collapse
+        </div>
+        <!-- contener de collapse, donde se aplica la instruccion del collapse-->
+        <!-- no hace falta que este en el mismo lugar, como hacemos referencia a este elemento por su id -->
+        <!-- podemos poner el collapse donde queramos, este caso es mejor moverlo porque sino queda feo -->
+        <div class="collapse" id="collapse_demo">
+          <!-- caja contenedora de todo el contenido del collapse -->
+          <div class="content">
+            <!-- contenido -->
+            <p>
+              Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Natus
+              molestias soluta assumenda, obcaecati ad inventore, at atque
+              eligendi incidunt, dicta quisquam dignissimos eos earum vel sit
+              molestiae eius, possimus eum.
+            </p>
+            <img
+              class="img-fluid"
+              src="http://lorempixel.com/400/300"
+              alt="img-random"
+            />
+          </div>
+        </div>
+
+        <!-- modal -->
+        <!-- boton para accionar el modal -->
+        <div
+          class="btn btn-outline-info"
+          data-target="#modal_demo"
+          data-toggle="modal"
+        >
+          modal 1
+        </div>
+        <div
+          class="btn btn-outline-info"
+          data-target="#modal_demo2"
+          data-toggle="modal"
+        >
+          modal 2
+        </div>
+
+        <!-- contenedor de la instruccion del modal -->
+        <div class="modal fade" id="modal_demo">
+          <div class="modal-dialog">
+            <!-- tambien pueden usar el contenedor que ofrece bootstrap -->
+            <div class="content-modal">
+              <!-- contenido -->
+              <p>
+                Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Natus
+                molestias soluta assumenda, obcaecati ad inventore, at atque
+                eligendi incidunt, dicta quisquam dignissimos eos earum vel sit
+                molestiae eius, possimus eum.
+              </p>
+              <img
+                class="img-fluid"
+                src="http://lorempixel.com/400/300"
+                alt="img-random"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- modal 2 -->
+        <div class="modal fade" id="modal_demo2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <!-- data-dismiss="modal" se usa para cerra el modal -->
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">Modal body..</div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- carrusel -->
+      <div
+        id="carrusel_demo"
+        class="carousel slide bg-dark"
+        data-ride="carousel"
+      >
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li
+            data-target="#carrusel_demo"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carrusel_demo" data-slide-to="1"></li>
+          <li data-target="#carrusel_demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <!-- a las imagenes y a sus conetenedores les agregue h-100 y w-100 para que se adapten al tamaño del carrusel -->
+        <!-- ahora podemos definir un tamaño para el carrusel y las imagenes se adaptan -->
+        <div class="carousel-inner h-100 w-100">
+          <div class="carousel-item h-100 w-100 active">
+            <img
+              src="https://lorempixel.com/800/400"
+              class="h-100 w-100"
+              alt="Los Angeles"
+            />
+          </div>
+          <div class="carousel-item h-100 w-100">
+            <img
+              src="https://lorempixel.com/800/400"
+              class="h-100 w-100"
+              alt="Chicago"
+            />
+          </div>
+          <div class="carousel-item h-100 w-100">
+            <img
+              src="https://lorempixel.com/800/400"
+              class="h-100 w-100"
+              alt="New York"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a
+          class="carousel-control-prev"
+          href="#carrusel_demo"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carrusel_demo"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <hr />
+      <table
+        class="table table-bordered bg-dark table-dark table-hover table-borderless"
+      >
+        <thead class="thead-light">
+          <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+          </tr>
+          <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+          </tr>
+          <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+          </tr>
+          <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+          </tr>
+          <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="btn btn-outline-info">button 1</div>
+      <div class="btn btn-success">button 2</div>
+      <hr />
+
+      <div class="border">border</div>
+      <hr />
+
+      <!-- input group -->
+      <div class="input-group">
+        <!-- seccion del principio -->
+        <div class="input-group-prepend">
+          <!-- dropdown -->
+          <div class="dropdown">
+            <div class="btn btn-outline-info" data-toggle="dropdown">
+              mostrar
+            </div>
+
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">enlace 1</a>
+              <a href="#" class="dropdown-item">enlace 2</a>
+              <a href="#" class="dropdown-item">enlace 3</a>
+            </div>
+          </div>
+        </div>
+        <!-- input -->
+        <input type="text" class="form-control" placeholder="user name" />
+        <!-- seccion del final -->
+        <div class="input-group-append">
+          <!-- <div class="btn btn-info">boton</div> -->
+          <span class="input-group-text">texto</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>clase 6</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<h1>CSS3 - Clase 2 - Modelo de Caja</h1>
+		<nav>
+			<a href="#M-relative">medidas relarivas</a>
+			<a href="#M-absolute">medidas absolutas</a>
+			<a href="#Model-box">modelo de caja</a>
+			<a href="#Model-box-margin">margen</a>
+		</nav>
+	</header>
+
+	<!-- MAIN -->
+	<main>
+		<section id="s">
+			<h2>herencia</h2>
+			<article class="herencia">
+				<p>propiedades que se <span>heredan</span></p>
+			</article>
+		</section>
+		<section>
+			<h2>Imagen</h2>
+			<div class="background-img">
+				<!-- imagen de fondo centrada en el contenedor -->
+			</div>
+		</section>
+		<section>
+			<h2>Unidades de Medida</h2>
+			<article>
+				<h3 id="M-relative">Medidas Relativas</h3>
+
+				<div class="em-1">
+					<p>texto usando em</p>
+					<div class="em-2">
+						<p>texto usando em</p>
+					</div>
+				</div>
+
+				<div class="rem-1">
+					<p>texto usando rem</p>
+					<div class="rem-2">
+						<p>texto usando rem</p>
+						<div class="rem-3">
+							<p>texto usando rem</p>
+						</div>
+					</div>
+				</div>
+				<div class="medidas-relativas">
+					<!-- <img src="img/css3.png"> -->
+					<img src="http://lorempixel.com/400/400">
+					<!-- <img src="http://lorempixel.com/width/height"> -->
+				</div>
+			</article>
+			<article>
+				<h3 id="M-absolute">Medidas Absolutas</h3>
+				<div class="px">
+					<p>texto usando pixeles</p>
+				</div>
+				<div class="img-px">
+					<!-- <img src="img/css3.png"> -->
+				</div>
+			</article>
+		</section>
+		<section>
+			<h2 id="Model-box">Modelo de Caja</h2>
+			<article>
+				<h3>Border</h3>
+				<button class="boton-b">boton con border</button>
+			</article>
+			<article>
+				<h3>Padding</h3>
+				<button class="boton-p">boton con paddin</button>
+			</article>
+			<article>
+				<h3 id="Model-box-margin">Margin</h3>
+				<button class="boton-m">boton con margen</button>
+				<button class="boton-m">boton con margen</button>
+				<button class="boton-m">boton con margen</button>
+			</article>
+		</section>
+	</main>
+
+<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

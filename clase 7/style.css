@@ -1,0 +1,237 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+.caja
+{
+	background-color: blue;
+	font-size: 2rem;
+	border: 2px solid;
+	width: 150px;
+	height: 150px;
+}
+/*POSITION*/
+.caja-relative-2
+{
+	position: relative;
+	top: 150px;
+	left: 150px;
+}
+.caja-relative-4
+{
+	position: relative;
+	bottom: 450px;
+	left: 150px;
+}
+.clase-absolute
+{
+	position: relative;
+}
+.caja-absolute-2
+{
+	position: absolute;
+	top: 150px;
+	left: 150px;
+}
+.caja-absolute-4
+{
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+.caja-fixed-2
+{
+	/*position: fixed;*/
+	top: 300px;
+	left: 250px;
+}
+.caja-fixed-4
+{
+	/*position: fixed;*/
+	top: 300px;
+	right: 100px;
+}
+.caja-sticky-2
+{
+	position: sticky;
+	/*le agrego 100px para que no lo tape el header*/
+	top: 100px;
+}
+.caja-sticky-4
+{
+	position: sticky;
+	bottom: 0;
+}
+/*FLEX-BOX*/
+/*flex-container*/
+.clase-flex-direction
+{
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	/*flex-flow: wrap row;*/
+}
+/*flex-item*/
+.clase-flex-direction .caja
+{
+	flex-basis: 50px;
+	width: auto;
+}
+
+
+.clase-align
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*FLEX-BOX ELEMENTS*/
+.clase-align-self
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clase-align-self .caja-2
+{
+	align-self: flex-end;
+}
+.clase-flex-basis
+{
+	display: flex;
+}
+.clase-flex-basis .caja
+{
+	flex-basis: 20%;
+}
+.clase-proporcion
+{
+	display: flex;
+	/*flex-grow*/
+	/*espacio disponible*/
+	/*unit grow*/
+
+	/*flex-shrink*/
+	/*espacio sobrante*/
+	/*unit shrink*/
+
+
+	/*flex*/
+	/*flex:none; = flex:0 0 auto;
+	flex:n; = flex-grow:n;
+	flex:n(unit); = flex-basis:n(unit);
+	flex:auto; = flex: 1 1 auto;*/
+}
+.clase-proporcion .caja
+{
+	flex-basis: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+/*FLEX-BOX-MULTILINEA*/
+.clase-flex-multi
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.clase-flex-multi .caja
+{
+	flex: 1 0 25%;
+}
+
+
+
+
+/*STYLES WEB*/
+body
+{
+	background-color: #191919;
+}
+h1,
+h2,
+h3
+{
+	text-align:center;
+	background-color: #242424;
+}
+h2
+{
+	border: 2px solid red;
+	background-color: black;
+}
+header
+{
+	background-color: #212121;
+	border: 2px solid;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+nav
+{
+	background-color: #878787;
+	display: flex;
+	justify-content: space-around;
+}
+main
+{
+	width: 85vw;
+	margin: auto;
+	min-height: 100vh;
+	background-color: green;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+.flex-main,
+.flex-div,
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+article
+{
+	background-color: white;
+	color: black;
+	border: 2px solid;
+	margin: 5px;
+	min-height: 40vh;
+}
+.flex-concepts
+{
+	background-image: url(flex.jpg);
+	background-size: 100% 100%;
+}
+.boton
+{
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 10px;
+	margin: 5px;
+	text-decoration: none;
+}
+.caja
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.caja:nth-child(2n)
+{
+	background-color: red;
+}
+/*.caja:nth-child(3n + 1)
+{
+	background-color: red;
+}*/
+.clase-flex-multi .caja:nth-child(2n + 6)
+{
+	background: blue;
+}
+.clase-flex-multi .caja:nth-child(2n + 5)
+{
+	background: red;
+}

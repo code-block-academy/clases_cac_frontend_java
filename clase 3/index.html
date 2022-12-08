@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Clase 3</title>
+</head>
+<body>
+	<h1>Clase 3 HTML5 - Formularios</h1>
+
+	<h2>formularios</h2>
+	<!-- la etiqueta form define un formulario -->
+	<!-- atributos de form -->
+	<!-- action: define a donde se va enviar el formulario -->
+	<!-- method: define que se quiere hacer con el formulario, POST sirve para crear nuevos datos -->
+	<form action="link" method="POST" target="_blank">
+		<!-- fieldset agrupa el contenido de un formulario -->
+		<fieldset>
+			<!-- legend le da un titulo al contenido agrupado por fieldset -->
+			<legend>titulo de seccion de formulario</legend>
+			<!-- label nos permite seleccionar un input de una mejor forma, por ejemplo agregando un texto, -->
+			<!-- esto es muy util sobre todo con checkbox o radio -->
+			<!-- forma 1 -->
+			<!-- haciendo que el input sea hijo de label -->
+			<label>
+				name:
+				<!-- input define una entrada de datos, el tipo de dato que recibe esta dado por el atributo type -->
+				<!-- text define una entrada de texto no muy grande -->
+				<!-- el atributo name define un nombre para la entrada de dato, el nombre que le indiquemos en name va a ser el nombre que tenga el dato cuando enviemos el formulario -->
+				<input type="text" name="name">
+			</label>
+			<!-- forma 2 -->
+			<!-- usando el atributo for, donde vamos a ingresar el id del input que queremos relacionar -->
+			<label for="form-email">Correo</label>
+			<!-- email define una entrada de texto de tipo email -->
+			<input id="form-email" type="email" name="correo">
+			<!-- password define un texto oculto para ingresar una contraseña -->
+			contraseña:
+			<input type="password" name="contraseña">
+			<!-- color define una entrada de color en alguno de los formatos de color que existen -->
+			color:
+			<input type="color" name="color">
+			<!-- date define una entrada de una fecha -->
+			date:
+			<input type="date" name="fecha"><br>
+			<!-- tel define una entrada de un numero telefonico -->
+			tel:
+			<input type="tel" name="telefono">
+			<!-- number define una entrada de dato tipo numerico -->
+			numero:
+			<input type="number" name="numero"> 
+ 			<!-- range define una entrada de dato numerico en un rango especifico -->
+			range:
+			<!-- atributos -->
+			<!-- min define el valor minimo -->
+			<!-- max define el valor maximo -->
+			<!-- step define el incremento o decremento en cada paso -->
+			<input type="range" name="rango" min="1" max="20" step="2">
+		</fieldset>
+		<!-- textarea define un texto amplio -->
+		<!-- el atributo placeholder define un texto de ayuda para el usuario -->
+		<textarea name="comentarios" placeholder="comentarios"></textarea>
+		<br>
+		<!-- mas atributos de los inputs -->
+		<!-- required: define un input obligatorio -->
+		<!-- disable: desactiva un input -->
+		<fieldset>
+			<legend>radio</legend>
+			<!-- el input radio nos permite realizar una seleccion unica, para esto tenemos que asignarle el mismo name a todos los input que queremos relacionar -->
+			<label>
+				<input type="radio" name="seleccion-unica" value="option-1">
+				option 1
+			</label>
+			<label>
+				<!-- el atributo checked define un elemento marcado en los radio o checkbox -->
+				<input type="radio" name="seleccion-unica" value="option-2" checked>
+				option 2
+			</label>
+			<label>
+				<input type="radio" name="seleccion-unica" value="option-3">
+				option 3
+			</label>
+			<label>
+				<input type="radio" name="seleccion-unica" value="option-4">
+				option 4
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>checkbox</legend>
+			<!-- el input checkbox nos permite realizar una seleccion multiple, para esto tenesmo que asignarle el mismo name a todos los input que queremos relacionar -->
+			<label>
+				<input type="checkbox" name="seleccion-multiple" value="option-1">
+				option 1
+			</label>
+			<label>
+				<!-- el atributo checked define un elemento marcado en los radio o checkbox -->
+				<input type="checkbox" name="seleccion-multiple" value="option-2" checked>
+				option 2
+			</label>
+			<label>
+				<input type="checkbox" name="seleccion-multiple" value="option-3">
+				option 3
+			</label>
+			<label>
+				<input type="checkbox" name="seleccion-multiple" value="option-4">
+				option 4
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>select</legend>
+			<!-- select no permite elegir una opcion de una lista de opciones -->
+			<select name="select">
+				<!-- con option definimos cada opcion del select -->
+				<option value="option-1">option 1</option>
+				<option value="option-2">option 2 </option>
+				<!-- el atributo selected define el elemento inicial para el valor del select -->
+				<option value="option-3" selected>option 3</option>
+				<option value="option-4">option 4</option>
+				<option value="option-5">option 5</option>
+			</select>
+		</fieldset>
+		<!-- submit define un boton para enviar el formulario -->
+		<input type="submit">
+		<!-- reset define un boton para reiniciar los datos del formulario -->
+		<!-- el atributo value define un valor inicial para el input -->
+		<input type="reset" value="reset form">
+	</form>
+	<br>
+	<hr>
+	<br>
+	<!-- formulario de ejemplo -->
+	<form action="link" method="POST" target="_blank" oninput="result.value=parseInt(comensales.value)">
+		<fieldset>
+			<legend>Formulario de Ejemplo</legend>
+			<fieldset>
+				<legend>Datos de usuario</legend>
+				<label>
+					nombre:
+					<input type="text" name="nombre">
+				</label>
+				<br>
+				<label>
+					mail:
+					<input type="email" name="correo">
+				</label>
+				<br>
+				<label>
+					telefono:
+					<input type="number" name="telefono">
+				</label>
+				<br>
+			</fieldset>
+			<fieldset>
+				<legend>Datos de Reserva</legend>
+				<label>
+					fecha:
+					<input type="date" name="fecha">
+				</label>
+				<br>
+				<label>
+					franja horaria
+					<select name="franja-horaria">
+						<option value="13:00---14:00">13:00---14:00</option>
+						<option value="14:00---15:00">14:00---15:00</option>
+						<option value="15:00---16:00">15:00---16:00</option>
+						<option value="16:00---17:00">16:00---17:00</option>
+					</select>
+				</label>
+				<br>
+				<label>
+					comensales (min:1,max:10)
+					<input type="range" name="comensales" min="1" max="10" value="1">
+					<output name="result" for="comensales"></output>
+				</label>
+				<br>
+				<label>
+					color de mesa:
+					<!-- el atributo list define una lista de valores para mostrar al usuario -->
+					<!-- el nombre de la lista tiene que ser el id de un elemento datalist -->
+					<input type="color" name="color-mesa" list="lista-colores">
+					<!-- datalist define una lista de valores para un input -->
+					<datalist id="lista-colores">
+						<!-- en cada option definimos un valor -->
+						<!-- en el caso de color tenemos que definir colores con el codigo hexadecimal -->
+						<option value="#ff0000">
+						<option value="#0043ff">
+						<option value="#00ff14">
+						<option value="#ffe000">
+						<option value="#ffffff">
+						<option value="#000000">
+						<option value="#ff5b0c">
+					</datalist>
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>extra</legend>
+				<label>
+					demandas especiales:
+					<br>
+					<textarea name="comentarios"></textarea>
+				</label>
+			</fieldset>
+			<br>
+			<input type="submit" value="enviar">
+			<input type="reset" value="reiniciar formulario">
+		</fieldset>
+	</form>
+	<br>
+	<hr>
+	<a href="pagina.html">ir a pagina 2</a>
+</body>
+</html>

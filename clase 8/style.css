@@ -1,0 +1,205 @@
+/*ESTILOS INICIALES*/
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.5s ease;
+	color: black;
+}
+main
+{
+	width: 80vw;
+	min-height: 100vh;
+	margin: auto;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+nav
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+}
+h1,h2,h3
+{
+	text-align: center;
+}
+h2,h3
+{
+	color: white;
+}
+.btn
+{
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+/*formulario de ejemplo*/
+.example-form
+{
+	background: linear-gradient(#1ad0e5, #0b2fa9);
+	padding: 20px;
+	position: relative;
+	height: 70vh;
+}
+.form-registre
+{
+	height: 60vh;
+	border: 2px solid black;
+	background-color: white;
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.form-title
+{
+	color: #0e279b;
+	font-size: 2rem;
+}
+.form-inputs
+{
+	display: flex;
+	flex-direction: column;
+	height: 60%;
+	justify-content: space-between;
+}
+.form-label
+{
+	background-color: #f3f7f6;
+	padding: 20px;
+	border-radius: 5px;
+}
+.form-label [placeholder]
+{
+	background-color:transparent;
+	border: none;
+	width: 90%;
+	position: relative;
+	overflow: visible;
+}
+.form-label i
+{
+	margin-right: 5px;
+	color: #b9bdbc;
+}
+[placeholder]:focus
+{
+	/*en navegadores chromiun se crea como un border blanco*/
+	/*lo podemos quitar con outline*/
+	outline: none;
+	color: black;
+	padding: 10px;
+}
+[placeholder]:valid
+{
+	border-bottom: 2px solid #18dd6c;
+}
+[placeholder]:focus:invalid
+{
+	border-bottom: 2px solid #e22530;
+}
+.form-btns
+{
+	display: flex;
+	justify-content: space-between;
+	color: #838584;
+}
+.form-btns [type="button"]
+{
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	width: 45%;
+	font-size: 14px;
+	color: #babebd;
+}
+.form-btns [type="button"]:hover
+{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.form-btns [type="button"]:focus
+{
+	outline:none;
+}
+.form-btns :nth-child(1)
+{
+	background: linear-gradient(270deg,#1ad0e5, #0b2fa9);
+	color: white;
+}
+img
+{
+	display: block;
+	margin: auto;
+	width: 700px;
+	height: 100%;
+}
+
+/*BARRA DE NAVEGACION*/
+header
+{
+	position: relative;
+	height: 100px;
+}
+nav
+{
+	padding: 10px;
+	position: absolute;
+	width: 50%;
+	transform: translate(50%);
+}
+.nav-btn
+{
+	text-decoration: none;
+}
+.nav-btn:hover
+{
+	font-size: 2rem;
+	transform: translateY(-5px);
+}
+/*SECTIONS*/
+.section
+{
+	height: 60vh;
+	width: 100%;
+}
+.scroll
+{
+	overflow-x: auto;
+	display: flex;
+	height: 90%;
+	align-items: center;
+}
+.caja
+{
+	width: 300px;
+	height: 300px;
+	flex-shrink: 0;
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: white;
+	margin: 10px;
+	border-radius: 50%;
+	transform: scale(0.7);
+	transition: 0.8s linear;
+}
+.caja:nth-child(odd)
+{
+	background: blue;
+}
+.caja:hover
+{
+	transform: scale(1) rotate(360deg);
+	border-radius: 0;
+}

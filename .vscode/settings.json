@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 25,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.suggest.showInterfaces": false,
+  "editor.suggest.showStructs": false,
+  "editor.suggest.showEnums": false,
+  "editor.suggest.showClasses": false
+}

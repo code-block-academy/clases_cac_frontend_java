@@ -1,0 +1,158 @@
+/*herencia*/
+.herencia
+{
+	text-align: center;
+	color: red;
+	cursor: url(img/cursor.png), auto;
+	height: 400px;
+	box-sizing: border-box;
+}
+.herencia p
+{
+	/*background-color: black;
+	color: initial;
+	height: inherit;*/
+	color: blue;
+}
+
+/*CENTRAR UNA IMAGEN DE FONDO*/
+.background-img
+{
+	width: 100%;
+	height: 500px;
+	/*background-image: url(http://lorempixel.com/300/300);
+	background-repeat: no-repeat;*/
+	background:url(http://lorempixel.com/300/300) no-repeat;
+	background-size: 100% 100%;
+	background-origin: border-box;
+}
+
+body
+{
+	/*cursor: url(img/cursor.png), auto;*/
+	/*cursor: crosshair;*/
+}
+.em-1
+{
+	/*1em = tamaño actual de fuente*/
+	/*1em = 16px * 1 */
+	/*1.5em = 1.5 * 16px*/
+	font-size: 25px;
+	color: red;
+}
+.em-2
+{
+	/*font-size: 24px;*/
+	/*1em = tamaño actual de fuente*/
+	/*1em = 24px * 1 */
+	/*1.5em = 1.5 * 24px*/
+	font-size: 1.5em;
+	color: green;
+}
+.rem-1
+{
+	/*1.5em = 1.5 * 16px*/
+	color: orange;
+	font-size: 1.5rem;
+}
+.rem-2
+{
+	color: blue;
+	font-size: 1.5rem;
+}
+.rem-3
+{
+	color: green;
+	font-size: 1.5rem;
+}
+.medidas-relativas
+{
+	width: 50vw;
+	height: 50vh;
+}
+.medidas-relativas img
+{
+	/*100% = 300px (tamaño padre)*/
+	/*50%  = ? (tamaño hijo)*/
+	width: 50%;
+	height: 50%;
+	/*border-radius: 50%;
+	border: 2px solid;*/
+	/*border: solid 1px;*/
+	/*transform: translate(100%,100%);*/
+}
+.px
+{
+	font-size: 20px;
+}
+.boton-b
+{
+	/*border-width: 10px;
+	border-style: double;
+	border-color: blue;*/
+	border: solid 10px blue;
+	font-weight: bold;
+	/*border-radius: 50%;*/
+}
+
+.boton-p
+{
+	padding: 10px;
+	font-weight: bold;
+}
+.boton-m
+{
+	border: 5px solid black;
+	padding: 10px;
+	margin: 10px;
+	margin-right: 50px;
+	font-weight: bold;
+}
+/*....*/
+h1,h2,h3,h4
+{
+	text-align: center;
+}
+body
+{
+	background-color: #212121;
+}
+main,
+header
+{
+	background-color: white;
+}
+main
+{
+	display: block;
+	margin: auto;
+	width: 80vw;
+}
+article > div
+{
+	border: dashed;
+	padding: 10px;
+	margin: 10px;
+}
+section > article
+{
+	border: solid;
+	padding: 20px;
+	margin: 10px;
+}
+nav
+{
+	margin: auto;
+	width: fit-content;
+}
+nav a
+{
+	text-decoration: none;
+	color: white;
+	background-color: #202020;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 5px 10px;
+	border: solid green;
+	display: inline-block;
+}

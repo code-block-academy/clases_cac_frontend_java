@@ -1,0 +1,88 @@
+h1,
+h2,
+h3
+{
+	/*text-align: define la alineacion del texto, puede valer center, left, right*/
+	text-align: center;
+}
+h3
+{
+	background: #a90000;
+}
+#contenedor
+{
+	width: 800px;
+}
+header
+{
+	background: #212121;
+	color: white;
+}
+nav
+{
+	text-align: right;
+}
+nav a
+{
+	/*text-decoration: agrega un linea al texto*/
+	/*1º valor: donde esta la linea
+	2º valor: el tipo de linea
+	3º valor: el color de la linea*/
+	text-decoration: underline dashed red;
+	/*tambien se puede agregar por separado*/
+/*		text-decoration-line: underline;
+		text-decoration-style: dashed;
+		text-decoration-color: red;*/
+	color: white;
+	background: black;
+}
+main
+{
+	background: #181818;
+	color: white;
+}
+footer
+{
+	background: #212121;
+	color: white;
+}
+ol ol
+{
+	/*list-style-type: define el indice que se va a usar en los elementos, pueden ser numeros, letras del abecedario,puntos,cadrados,etc*/
+	list-style-type: upper-latin;
+	/*tabien pueden usar list-style-image para definir una imagen como indice del listado*/
+	/*list-style-image:url("link de la imagen");*/
+}
+ul ul
+{
+	list-style: square;
+}
+.negrita
+{
+	/*font-weight: define el ancho de la fuente*/
+	font-weight: bold;
+}
+td
+{
+	width: 100px;
+	height: 100px;
+	border: solid;
+}
+#tabla-1
+{
+	background: red;
+}
+
+#tabla-2
+{
+	background: blue;
+}
+.letra-color-rojo
+{
+	color: red;
+}
+.img-cuadro
+{
+	width: 300px;
+	height: 300px;
+}
